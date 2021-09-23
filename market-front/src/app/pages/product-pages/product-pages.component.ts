@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ProductInterFace} from "../../model/product.model";
+import {ProductInterFace, Product} from "../../model/product.model";
 import {ProductService} from "../../product.service";
 import {CategoryService} from "../../category.service";
 import {Category} from "../../model/category.model";
@@ -28,6 +28,11 @@ export class ProductPagesComponent implements OnInit {
     this.categoryService.getCategories().subscribe(
       categories => this.categories = categories
     )
+  }
+
+  search(name: string){
+    this.productService.searchProducts(name).subscribe((products : Product[]) =>
+   this.products = products)
   }
 
 

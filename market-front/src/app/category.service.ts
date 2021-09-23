@@ -9,7 +9,7 @@ import {Observable} from "rxjs";
 export class CategoryService {
 
 
-  private readonly path ="http://localhost:8080/api/categories"
+  private readonly path ="http://localhost:8080/api/categories/"
 
   constructor(private http : HttpClient) { }
 

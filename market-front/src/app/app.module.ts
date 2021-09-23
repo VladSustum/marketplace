@@ -9,6 +9,7 @@ import { ProductPagesComponent } from './pages/product-pages/product-pages.compo
 
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {FormsModule} from "@angular/forms";
     ProductListItemComponent,
     ProductListComponent,
     ProductPagesComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
