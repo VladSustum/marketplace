@@ -15,7 +15,10 @@ import { ShopcartFormComponent } from './pages/shopcart-form/shopcart-form.compo
 import { ShopppingcartListItemComponent } from './shopppingcart-list-item/shopppingcart-list-item.component';
 import { ShoppingcartListComponent } from './shoppingcart-list/shoppingcart-list.component';
 import { TestPageComponent } from './test-page/test-page.component';
+<<<<<<< HEAD
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+=======
+>>>>>>> d09dd24ec50bc812d7fb676a5e346c8e48427be1
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     ShopppingcartListItemComponent,
     ShoppingcartListComponent,
     TestPageComponent,
+<<<<<<< HEAD
     PageNotFoundComponent,
+=======
+>>>>>>> d09dd24ec50bc812d7fb676a5e346c8e48427be1
   ],
   imports: [
     BrowserModule,
