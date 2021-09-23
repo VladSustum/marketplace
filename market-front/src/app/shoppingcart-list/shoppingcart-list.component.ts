@@ -12,7 +12,6 @@ export class ShoppingcartListComponent implements OnInit {
   public shopCarts : ShoppingCart[];
 
   constructor() {
-    this.shopCarts= [];
   }
 
   ngOnInit(): void {

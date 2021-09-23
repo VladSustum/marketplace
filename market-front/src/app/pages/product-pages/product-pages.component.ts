@@ -3,6 +3,8 @@ import {ProductInterFace, Product} from "../../model/product.model";
 import {ProductService} from "../../product.service";
 import {CategoryService} from "../../category.service";
 import {Category} from "../../model/category.model";
+import { ShoppingCart } from 'src/app/model/shoppingcart.model';
+import { ShoppingcartService } from 'src/app/shoppingcart.service';
 
 @Component({
   selector: 'app-product-pages',
@@ -12,7 +14,6 @@ import {Category} from "../../model/category.model";
 export class ProductPagesComponent implements OnInit {
 
   public categories : Category[];
-
   public products : ProductInterFace[];
 
   public productForCart : Product;
@@ -48,5 +49,9 @@ this.productService.getProducts().subscribe(
   setProductForShopcart(product : Product){
   this.productForCart=product;
   }
+  reset(){
+    this.loadData();
+  }
+
 
 }

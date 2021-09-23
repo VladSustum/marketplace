@@ -15,13 +15,15 @@ export class ShopcartPageComponent implements OnInit {
     this.shopCarts = [];
   }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.getShopingCarts();
+    console.log(this.shopCarts);
   }
 
   getShopingCarts(){
-    this.shopCartService.getShopingCarts().subscribe(
-      res => this.shopCarts= res
-    )
+    this.shopCartService.getShopingCarts()
+    .subscribe(res => this.shopCarts= res
+    );
   }
 
 }

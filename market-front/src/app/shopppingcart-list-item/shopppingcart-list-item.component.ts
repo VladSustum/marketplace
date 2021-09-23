@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { Category } from '../model/category.model';
+import { Product } from '../model/product.model';
 import {ShoppingCart} from "../model/shoppingcart.model";
 
 @Component({
@@ -12,7 +14,7 @@ export class ShopppingcartListItemComponent implements OnInit {
   public shopCart : ShoppingCart;
 
   constructor() {
-
+    
   }
 
   ngOnInit(): void {

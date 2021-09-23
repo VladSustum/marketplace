@@ -10,6 +10,9 @@ export class SearchComponent implements OnInit {
   @Output()
   setSearchTerm : EventEmitter<string> = new EventEmitter();
 
+  @Output()
+  Rested : EventEmitter<void>=new EventEmitter();
+
 
   searchTerm : string;
 
@@ -26,7 +29,7 @@ export class SearchComponent implements OnInit {
 
   reset(){
     this.searchTerm = '';
-    this.setSearchTerm.next(this.searchTerm);
+    this.Rested.next();
   }
 
 

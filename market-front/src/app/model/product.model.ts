@@ -7,8 +7,8 @@ import {Category} from "./category.model";
     picture: string;
     price : number;
     availableQuantity: number;
-    creationDate: Date;
-    creationTime: Date;
+    creationDate?: Date;
+    creationTime?: Date;
     category : Category;
 }
 
