@@ -6,7 +6,7 @@ export interface ShoppingcartInterface {
   quantity: number;
 
 }
-  export class shoppingCart implements ShoppingcartInterface{
+  export class ShoppingCart implements ShoppingcartInterface{
     public  id?: number;
     public  product: Product;
     public  quantity: number;

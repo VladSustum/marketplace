@@ -12,6 +12,8 @@ import {FormsModule} from "@angular/forms";
 import { SearchComponent } from './search/search.component';
 import { ShopcartPageComponent } from './pages/shopcart-page/shopcart-page.component';
 import { ShopcartFormComponent } from './pages/shopcart-form/shopcart-form.component';
+import { ShopppingcartListItemComponent } from './shopppingcart-list-item/shopppingcart-list-item.component';
+import { ShoppingcartListComponent } from './shoppingcart-list/shoppingcart-list.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ShopcartFormComponent } from './pages/shopcart-form/shopcart-form.compo
     SearchComponent,
     ShopcartPageComponent,
     ShopcartFormComponent,
+    ShopppingcartListItemComponent,
+    ShoppingcartListComponent,
   ],
   imports: [
     BrowserModule,
