@@ -8,7 +8,7 @@ import {ShoppingCart} from "./model/shoppingcart.model";
 })
 export class ShoppingcartService {
 
-  private readonly path="http://localhost:8080/api/shopingcart/"
+  private readonly path="http://localhost:8080/api/shopingcart/";
 
   constructor(private http : HttpClient) { }
 
