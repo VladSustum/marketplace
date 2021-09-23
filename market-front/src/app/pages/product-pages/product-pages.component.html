@@ -1,5 +1,5 @@
-<app-search (setSearchTerm)="search($event)"></app-search>
+<app-search (setSearchTerm)="search($event)" (Rested)="reset()"></app-search>
 <app-product-list (markForCartShop)="setProductForShopcart($event)" [products]="products"></app-product-list>
 <app-shopcart-form [productForShopingCart]="productForCart"></app-shopcart-form>
-<app-shoppingcart-list [shopCarts]="shopCarts"></app-shoppingcart-list>
+
 

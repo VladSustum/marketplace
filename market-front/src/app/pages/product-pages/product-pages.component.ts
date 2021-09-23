@@ -14,15 +14,13 @@ import { ShoppingcartService } from 'src/app/shoppingcart.service';
 export class ProductPagesComponent implements OnInit {
 
   public categories : Category[];
-  public shopCarts : ShoppingCart[];
   public products : ProductInterFace[];
 
   public productForCart : Product;
 
   constructor(
     private productService: ProductService,
-    private categoryService : CategoryService,
-    private shopService : ShoppingcartService
+    private categoryService : CategoryService
   ) { }
 
   ngOnInit() {
@@ -51,11 +49,9 @@ this.productService.getProducts().subscribe(
   setProductForShopcart(product : Product){
   this.productForCart=product;
   }
-
-  getShopingCarts(){
-    this.shopService.getShopingCarts()
-    .subscribe(res => this.shopCarts= res
-    );
+  reset(){
+    this.loadData();
   }
+
 
 }

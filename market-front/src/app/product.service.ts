@@ -16,6 +16,9 @@ export class ProductService {
   getProducts(): Observable<Product[]>{
     return  this.http.get<Product[]>(this.path)
   }
+  getNewestProducts():Observable<Product[]>{
+    return this.http.get<Product[]>(`${this.path}${"newest"}`);
+  }
 
   searchProducts(categoryName : string) : Observable<Product[]>{
     const params : HttpParams= new HttpParams().append('categoryName', categoryName);
