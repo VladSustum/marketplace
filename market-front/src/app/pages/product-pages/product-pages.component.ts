@@ -15,6 +15,8 @@ export class ProductPagesComponent implements OnInit {
 
   public products : ProductInterFace[];
 
+  public productForCart : Product;
+
   constructor(
     private productService: ProductService,
     private categoryService : CategoryService
@@ -42,5 +44,9 @@ this.productService.getProducts().subscribe(
 )
   this.getCategories();
 }
+
+  setProductForShopcart(product : Product){
+  this.productForCart=product;
+  }
 
 }

@@ -1,3 +1,4 @@
 <app-search (setSearchTerm)="search($event)"></app-search>
-<app-product-list [products]="products"></app-product-list>
+<app-product-list (markForCartShop)="setProductForShopcart($event)" [products]="products"></app-product-list>
+<app-shopcart-form [productForShopingCart]="productForCart"></app-shopcart-form>
 

@@ -10,6 +10,8 @@ import { ProductPagesComponent } from './pages/product-pages/product-pages.compo
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import { SearchComponent } from './search/search.component';
+import { ShopcartPageComponent } from './pages/shopcart-page/shopcart-page.component';
+import { ShopcartFormComponent } from './pages/shopcart-form/shopcart-form.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { SearchComponent } from './search/search.component';
     ProductListComponent,
     ProductPagesComponent,
     SearchComponent,
+    ShopcartPageComponent,
+    ShopcartFormComponent,
   ],
   imports: [
     BrowserModule,
