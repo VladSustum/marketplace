@@ -6,6 +6,7 @@ import {Category} from "./category.model";
     description : string;
     picture: string;
     price : number;
+    availableQuantity: number;
     creationDate: Date;
     creationTime: Date;
     category : Category;
@@ -17,6 +18,7 @@ export class Product implements ProductInterFace{
   public description : string;
   public picture : string;
   public price : number;
+  public availableQuantity: number;
   public creationDate : Date;
   public creationTime : Date;
   public category : Category;
@@ -28,6 +30,7 @@ export class Product implements ProductInterFace{
       this.description = productCfg.name;
       this.picture = productCfg.picture;
       this.price = productCfg.price;
+      this.availableQuantity = productCfg.availableQuantity;
       this.creationDate= productCfg.creationDate;
       this.creationTime = productCfg.creationTime;
       this.category = productCfg.category;
