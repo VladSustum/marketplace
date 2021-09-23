@@ -8,7 +8,7 @@ import {Product} from "./model/product.model";
 })
 export class ProductService {
 
-  private readonly path ="http://localhost:8080/api/products"
+  private readonly path ="http://localhost:8080/api/products/"
 
   constructor(private http : HttpClient) { }
 
@@ -18,7 +18,7 @@ export class ProductService {
   }
 
   getProduct(id: number): Observable<Product>{
-    return this.http.get<Product>(`${this.path}/${id}`);
+    return this.http.get<Product>(`${this.path}${id}`);
   }
 
   postProduct(product : Product) : Observable<Product>{
@@ -26,11 +26,11 @@ export class ProductService {
   }
 
   deleteProduct(id: number) : Observable<Product>{
-    return this.http.delete<Product>(`${this.path}/${id}`);
+    return this.http.delete<Product>(`${this.path}${id}`);
   }
 
   putProduct(product: Product) : Observable<Product>{
-    return this.http.put<Product>(`${this.path}/${product.id}`, product);
+    return this.http.put<Product>(`${this.path}${product.id}`, product);
   }
 
 }
